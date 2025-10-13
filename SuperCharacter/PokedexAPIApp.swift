@@ -1,0 +1,17 @@
+//
+//  PokedexAPIApp.swift
+//  PokedexAPI
+//
+//  Created by Ariel Nappio on 13/10/2025.
+//
+
+import SwiftUI
+
+@main
+struct PokedexAPIApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
