@@ -12,7 +12,8 @@ import Foundation
     //Codable = @Serializable
     struct SearchResponse : Codable{
         let response: String
-        let results :[SuperHero]
+        let error: String?
+        let results :[SuperHero]?
     }
     
 

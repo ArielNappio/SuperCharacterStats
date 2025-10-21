@@ -32,9 +32,14 @@ class ApiService : ApiProvider {
             //  Retornar éxito , el response (el dato que buscabamos)
             return  NetworkReponse.success(response)
 
+        }  catch let error as DecodingError {
+            // Si el error es de decodificación, muestre el detalle del error
+            print("Decoding Error: \(error)")
+            return NetworkReponse.failure("Error de Decodificación: \(error.localizedDescription)")
         } catch {
-            //  Capturar cualquier error (red, parseo, etc.)
-            return NetworkReponse.failure("Error: \(error.localizedDescription)")
+            // Cualquier otro error (ej. red)
+            print("Network/Other Error: \(error)")
+            return NetworkReponse.failure("Error de Red/Otro: \(error.localizedDescription)")
         }
     }
 

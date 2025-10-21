@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct PokedexAPIApp: App {
+struct SuperCharacterStatsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SuperHeroSearcher()
         }
     }
 }

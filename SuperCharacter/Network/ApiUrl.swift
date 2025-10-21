@@ -13,5 +13,4 @@ struct ApiUrl {
         return "https://superheroapi.com/api/6c063cf158fed81ef3800ef5fec22ce3/search/\(query)"
     }
     
-    
 }

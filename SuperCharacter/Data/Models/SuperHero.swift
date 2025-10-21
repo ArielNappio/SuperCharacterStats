@@ -9,8 +9,12 @@
 import Foundation
 
 struct SuperHero: Codable, Identifiable {
-    let id: Int
+    let id: String
     let name: String
-    let imageUrl: String
+    let image: SuperHeroImage
 }
 
+
+struct SuperHeroImage: Codable {
+    let url: String
+}
